@@ -1,9 +1,14 @@
+import BridgeGameController from "./Controller/BridgeGameController.js";
+
 class App {
-  play() {}
+  play() {
+    const bridgeGameController = new BridgeGameController();
+    bridgeGameController.start();
+  }
 }
 
 const app = new App();
 
 app.play();
 
-module.exports = App;
+export default App;
